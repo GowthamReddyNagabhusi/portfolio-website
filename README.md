@@ -1,9 +1,6 @@
 # Portfolio Website
 
-This repository contains two portfolio implementations:
-
-- Root app: static HTML/CSS/JS site
-- modern-portfolio: React + Vite + Tailwind site
+This repository contains Gowtham's personal portfolio website built with HTML, CSS, and JavaScript.
 
 ## Resume
 
@@ -13,26 +10,10 @@ Current resume file in the repository root:
 
 ## Local Development
 
-Run the React portfolio locally:
-
-```bash
-cd modern-portfolio
-npm install
-npm run dev
-```
-
-## Production Build
-
-```bash
-npm --prefix modern-portfolio run build
-```
+Open index.html in a browser, or run a local static server from the repository root.
 
 ## Vercel Deployment
 
-This repo is configured for Vercel using the root vercel.json file.
+This repo is configured to deploy the root static site.
 
-- Install command: npm --prefix modern-portfolio ci
-- Build command: npm --prefix modern-portfolio run build
-- Output directory: modern-portfolio/dist
-
-After connecting this GitHub repository in Vercel, deployments should work without additional build configuration.
+After connecting this GitHub repository in Vercel, it can be deployed without installing packages or running a build step.

@@ -1,6 +1,9 @@
 {
   "version": 2,
-  "installCommand": "npm --prefix modern-portfolio ci",
-  "buildCommand": "npm --prefix modern-portfolio run build",
-  "outputDirectory": "modern-portfolio/dist"
+  "builds": [
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
+    }
+  ]
 }

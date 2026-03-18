@@ -24,9 +24,7 @@ __pycache__/
 
 # Node build artifacts
 node_modules/
-modern-portfolio/node_modules/
 dist/
-modern-portfolio/dist/
 
 # Editor directories
 .vscode/

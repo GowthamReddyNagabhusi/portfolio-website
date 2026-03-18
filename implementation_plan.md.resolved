@@ -1,127 +1,84 @@
-# Next-Level Portfolio UI Overhaul
+# Portfolio Image Reorganization & UI Redesign for Competitive Programmers
 
-Transform the current dark-themed portfolio into a jaw-dropping, award-winning visual experience with immersive effects, depth, and premium polish while preserving all existing content.
+Transform the portfolio's image organization and update the color theme to be uniquely appealing for competitive programmers.
 
 ## Proposed Changes
 
-### HTML Enhancements
+---
 
-#### [MODIFY] [index.html](file:///c:/Users/hp/OneDrive/Documents/Desktop/portfolio-master/index.html)
+### Image File Organization
 
-- Add a full-screen `<canvas id="particles">` behind the hero for an animated particle constellation
-- Add `<div class="scroll-indicator">` at the bottom of the hero with an animated bouncing arrow
-- Wrap stat numbers (318, 1577, 1144, etc.) with `<span class="counter" data-target="318">0</span>` for animated counting
-- Add `data-tilt` attributes to project cards and CP platform cards for 3D tilt hover effect
-- Add a `<div class="cursor-glow">` element for a custom magnetic cursor glow effect
-- Add `<div class="noise-overlay">` for subtle film-grain texture across the page
-- Add `<div class="aurora-bg">` animated background blobs for sections
-- Keep all existing text, links, images, and data untouched
+**Action**: Move and rename 3 new screenshots from the project root → `assets/images/`, overwriting existing placeholder images.
+
+| Screenshot (root) | Renamed to (assets/images/) | Project |
+|---|---|---|
+| `Screenshot 2026-03-18 193250.png` | `project-food-ordering.png` | Food Ordering Website |
+| `Screenshot 2026-03-18 194510.png` | `project-translator-app.png` | Web-Based Language Translator |
+| `Screenshot 2026-03-18 194719.png` | `project-matching-engine.png` | Resume Builder → *(see HTML fix below)* |
+
+**Action**: Delete these unused/duplicate files from `assets/images/`:
+- `project-ai-language.png`, `project-ai-language.png.png`
+- `project-aws-s3.png`, `project-aws-s3.png.png`
+- `project-library.png`, `project-library.png.png`
+- `unknown1.png`, `unknown2.png`, `unknown3.png`
+- `portfolio-1.jpg` through `portfolio-4.jpg`
+- `blog-1.jpg` through `blog-3.jpg`
+- `about-banner.jpg`, `absolute-image.jpg`, `hero-bg.jpg`, `hero-banner.jpg`, `rotate-img.png`
+- Delete original 3 screenshots from project root
 
 ---
 
-### CSS Complete Redesign
+### HTML Project Card Fixes
 
-#### [MODIFY] [style.css](file:///c:/Users/hp/OneDrive/Documents/Desktop/portfolio-master/assets/css/style.css)
+#### [MODIFY] [index.html](file:///c:/Prjoects/portfolio-master/index.html)
 
-**Color System** — Upgrade to a richer aurora-inspired palette:
-- Deep space black (`hsl(225, 50%, 4%)`) as primary background
-- Rich card surfaces with glassmorphism (`background: rgba(255,255,255,0.03)`, `backdrop-filter: blur(20px)`)
-- Vibrant aurora accent gradient: electric blue → cyan → emerald → violet
-- Animated gradient borders on cards using `background-clip` and rotating `conic-gradient`
+Currently the 3 project cards have image references that need to be verified and corrected to match the user's intended mapping:
 
-**Typography** — Premium font stack:
-- Switch headings to **Inter** (900 weight) for ultra-crisp bold titles
-- Body text stays **Manrope** but with improved letter-spacing and line-height
-- Large display headings get animated gradient text fill
+1. **Card 1** (Resume Builder / AI-Powered) → use `project-food-ordering.png` *(this is currently assigned but references the wrong project title in the alt text)*
+2. **Card 2** (Limit Order Matching Engine) → use `project-matching-engine.png` *(194719 = resume builder, so this card image will be updated)*
+3. **Card 3** (Web-Based Language Translator) → use `project-translator-app.png`
 
-**Hero Section**:
-- Full-viewport immersive hero with particle canvas behind
-- Avatar ring gets animated rainbow conic-gradient spin (smoother, faster)
-- Name text with animated gradient shimmer effect
-- Glowing typed cursor for the role subtitle
-- Social icons get neon glow halos on hover with scale+rotate
+> [!IMPORTANT]
+> The user's mapping: screenshot 193250 → food-ordering, 194510 → language translator, 194719 → resume builder.  
+> The HTML currently has 3 cards: Resume Builder, Matching Engine, Translator.  
+> I will also **add a Food Ordering Website card** since 193250 is explicitly for it, and fix the Matching Engine card to use 194719 (resume builder screenshot) or correct whichever project card the user wants.  
+> **Or more likely**: user just wants the correct image on the correct existing card. So: food-ordering card → 193250, translator card → 194510, matching engine or resume builder card → 194719.
 
-**Cards & Sections** (About, Skills, Projects, CP, Achievements, etc.):
-- Glassmorphism card backgrounds with frosted glass effect
-- Animated gradient borders that rotate using `@property` CSS animation
-- 3D perspective hover transforms (rotateX/rotateY) via CSS + JS data-tilt
-- Staggered reveal animations using `animation-delay` system on scroll
-- Skill progress bars get animated fill with shimmer pulse
-
-**Interactive Micro-Animations**:
-- Buttons get a liquid morphing shine sweep on hover
-- Tags and badges get float/pulse micro-animations
-- Section headings get an underline that draws from left on scroll-reveal
-- Smooth parallax depth on scroll for background elements
-
-**Custom Cursor**:
-- Hide default cursor, show a custom glowing orb that follows the mouse
-- Cursor grows/pulses when hovering interactive elements
-
-**Noise/Grain Overlay**:
-- Subtle animated noise texture overlay for cinematic depth
-
-**Light Theme**:
-- Retain light theme support, update variables for the new color system
+I will map `project-matching-engine.png` (formerly the matching engine image) to the matching engine card and ensure `project-food-ordering.png` is used for a "food ordering" project card. Since the HTML has no food ordering card yet, I'll add one.
 
 ---
 
-### JavaScript Overhaul
+### CSS Color Redesign — Competitive Programmer Theme
 
-#### [MODIFY] [script.js](file:///c:/Users/hp/OneDrive/Documents/Desktop/portfolio-master/assets/js/script.js)
+#### [MODIFY] [style.css](file:///c:/Prjoects/portfolio-master/assets/css/style.css)
 
-**Particle Constellation System**:
-- Canvas-based particle system rendering floating dots connected by lines when nearby
-- Mouse-interactive: particles gently attract toward the cursor
-- Configurable density, speed, connection distance, and colors
-- Responsive resize handling
+Replace the current **aurora purple/cyan** palette with a **Matrix green / electric lime / terminal black** palette designed specifically for competitive programmers:
 
-**Animated Counters**:
-- IntersectionObserver triggers counting animation when stat numbers enter viewport
-- Smooth easing (ease-out) from 0 to target value over 2 seconds
-- Only fires once per element
+**New palette concept:**
+- Background: `#0a0a0a` (near-black), `#0d1a0d` (deep forest green-black)
+- Primary accent: `hsl(120, 100%, 50%)` → Matrix green `#00ff00`
+- Secondary accent: `hsl(75, 100%, 50%)` → Electric lime `#aaff00`
+- Tertiary accent: `hsl(150, 80%, 55%)` → Emerald
+- Highlight: `hsl(195, 90%, 60%)` → Keep cyan for contrast
+- Danger/hard: Keep red neon
+- Cards: Dark forest glass with green-tinted borders
+- Glow: Green/lime neon glows instead of purple
 
-**3D Tilt Effect on Cards**:
-- Mousemove listener calculates card center offset
-- Applies `transform: perspective(1000px) rotateX() rotateY()` in real-time
-- Smooth reset on mouseleave with spring easing
-- Applied to project cards, CP platform cards, about cards
-
-**Custom Magnetic Cursor**:
-- A glowing orb `<div>` follows the mouse with slight delay (lerp)
-- Scales up when hovering buttons, links, cards
-- Fades out at page edges
-- Disabled on mobile/touch
-
-**Enhanced Scroll Reveal**:
-- Replace current reveal with a robust IntersectionObserver system
-- Multiple animation types: fadeUp, fadeLeft, fadeRight, scaleIn, blur-in
-- Stagger children with configurable delays
-- Threshold-based partial reveal for parallax-like depth
-
-**Smooth Typed Text**:
-- Hero role text typed character-by-character with blinking cursor
-- Loops through multiple role strings with delete/retype cycle
-
-**Existing functionality preserved**: nav toggle, scroll spy, theme toggle, skill/project filters, resume tabs
+**Visual design improvements:**
+- Terminal/code-block style project cards with `>` prompt decorators
+- `font-family: 'JetBrains Mono'` or `'Fira Code'` added for mono elements
+- Add binary/code rain decoration to hero section (CSS only, non-intrusive)
+- Skill progress bars in green (from purple)
+- Nav active indicator in matrix green
+- Section subtitles in lime green instead of purple
+- Scrollbar in matrix green
 
 ## Verification Plan
 
-### Browser Visual Testing
-- Open [index.html](file:///c:/Users/hp/OneDrive/Documents/Desktop/portfolio-master/index.html) via the browser tool on a local file server or directly
-- Verify the particle canvas renders animated dots in the hero background
-- Verify cards have glassmorphism and animated gradient borders
-- Verify counter numbers animate from 0 to target on scroll
-- Verify 3D tilt effect works on hover for project cards
-- Verify hero name has animated gradient text
-- Verify skill progress bars animate with shimmer
-- Verify the scroll indicator bounces at the hero bottom
-- Verify the custom cursor glow follows the mouse
-- Verify light/dark theme toggle still works
-- Check mobile responsiveness at 768px and 375px viewport widths
-
 ### Manual Verification
-- User should open the portfolio locally and scroll through all sections
-- Hover over project cards and CP cards to check tilt + glassmorphism
-- Toggle light/dark theme to confirm both modes look polished
-- Check mobile view for responsive layout
+1. Run `npx serve .` or open `index.html` directly in a browser from `c:\Prjoects\portfolio-master\`
+2. Navigate to the **Projects** section
+3. Verify all 3 project cards show correct screenshot images (no broken images)
+4. Verify 4th food ordering card (if added) also shows correctly
+5. Check colors throughout the page — should look green/matrix themed, not purple
+6. Check images directory has no duplicates/orphaned files

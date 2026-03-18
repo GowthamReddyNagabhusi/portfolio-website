@@ -1,54 +1,38 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/portfolio)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/portfolio?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/SAu7e09vXoQ?style=social)](https://youtu.be/SAu7e09vXoQ)
+# Portfolio Website
 
-  <br />
-  <br />
+This repository contains two portfolio implementations:
 
-  <h2 align="center">Personal Portfolio Website</h2>
+- Root app: static HTML/CSS/JS site
+- modern-portfolio: React + Vite + Tailwind site
 
-  Fully responsive personal portfolio website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+## Resume
 
-  <a href="https://codewithsadee.github.io/portfolio/"><strong>➥ Live Demo</strong></a>
+Current resume file in the repository root:
 
-</div>
+- Gowtham_Reddy_Resume.pdf
 
-<br />
+## Local Development
 
-### Demo Screeshots
-
-![Portfolio Desktop Demo](./readme-images/desktop.png "Desktop Demo")
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **Portfolio** locally, run this command on your git bash:
-
-Linux and macOS:
+Run the React portfolio locally:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/portfolio.git
+cd modern-portfolio
+npm install
+npm run dev
 ```
 
-Windows:
+## Production Build
 
 ```bash
-git clone https://github.com/codewithsadee/portfolio.git
+npm --prefix modern-portfolio run build
 ```
 
-### Contact
+## Vercel Deployment
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+This repo is configured for Vercel using the root vercel.json file.
 
-### License
+- Install command: npm --prefix modern-portfolio ci
+- Build command: npm --prefix modern-portfolio run build
+- Output directory: modern-portfolio/dist
 
-This project is **free to use** and does not contains any license.
+After connecting this GitHub repository in Vercel, deployments should work without additional build configuration.

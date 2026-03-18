@@ -1,0 +1,33 @@
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Vercel
+.vercel/
+
+# Local tooling metadata
+.kombai/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.rej
+
+# Node build artifacts
+node_modules/
+modern-portfolio/node_modules/
+dist/
+modern-portfolio/dist/
+
+# Editor directories
+.vscode/
+.idea/

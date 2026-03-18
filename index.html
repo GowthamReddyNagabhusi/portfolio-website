@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nagabhusi Gowtham Reddy - DSA Enthusiast | Competitive Programmer</title>
+  <meta name="description" content="Portfolio of Nagabhusi Gowtham Reddy — DSA Enthusiast, Competitive Programmer, and Cloud Engineer. 318+ LeetCode problems solved, Codeforces rated.">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- Immersive Effects -->
+  <canvas id="particles"></canvas>
+  <div class="noise-overlay"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#">
+        <h1 class="logo"><span class="logo-accent">GR</span> Portfolio</h1>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <button class="theme-toggle" aria-label="Toggle Theme" data-theme-btn>
+        <ion-icon name="moon-outline" class="theme-icon dark-icon" style="display: none;"></ion-icon>
+        <ion-icon name="sunny-outline" class="theme-icon light-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li><a href="#home"           class="navbar-link active" data-nav-link>Home</a></li>
+          <li><a href="#about"          class="navbar-link" data-nav-link>About</a></li>
+          <li><a href="#dsa-cp"         class="navbar-link" data-nav-link>DSA & CP</a></li>
+          <li><a href="#experience"     class="navbar-link" data-nav-link>Training</a></li>
+          <li><a href="#skills"         class="navbar-link" data-nav-link>Skills</a></li>
+          <li><a href="#projects"       class="navbar-link" data-nav-link>Projects</a></li>
+          <li><a href="#certifications" class="navbar-link" data-nav-link>Certs</a></li>
+          <li><a href="#achievements"   class="navbar-link" data-nav-link>Achievements</a></li>
+          <li><a href="#resume"         class="navbar-link" data-nav-link>Resume</a></li>
+          <li><a href="#contact"        class="navbar-link" data-nav-link>Contact</a></li>
+          <li><a href="./resume.pdf" download class="btn btn-primary">Download CV</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- #HERO -->
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+            <h2 class="hero-title">
+              <span>Hi, I'm</span>
+              <strong class="hero-name">Nagabhusi Gowtham<br>Reddy</strong>
+            </h2>
+
+            <p class="hero-role typing-line">DSA Enthusiast | Competitive Programmer | Cloud Engineer</p>
+
+            <p class="hero-text">
+              Computer Science student with a passion for Data Structures & Algorithms, competitive programming, and cloud engineering. I thrive on solving complex problems, optimizing solutions, and building scalable systems that make a difference.
+            </p>
+
+            <div class="hero-social">
+              <a href="https://www.linkedin.com/in/gowthamreddynagabhusi/" target="_blank" class="social-link" aria-label="LinkedIn">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="https://github.com/GowthamReddyNagabhusi" target="_blank" class="social-link" aria-label="GitHub">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" class="social-link" aria-label="LeetCode">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </a>
+              <a href="mailto:gowthamreddynagabhusi09@gmail.com" class="social-link" aria-label="Email">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </div>
+
+            <div class="btn-group hero-btn-group">
+              <a href="#contact" class="btn btn-primary blue">Contact Me</a>
+              <a href="#dsa-cp" class="btn btn-outline">My CP Profile</a>
+            </div>
+          </div>
+
+          <div class="hero-banner">
+            <div class="hero-avatar-wrapper">
+              <img src="assets/images/avatar.jpg" width="300" height="300"
+                alt="Nagabhusi Gowtham Reddy" class="hero-avatar">
+            </div>
+          </div>
+
+          <div class="scroll-indicator">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow">
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #ABOUT -->
+      <section class="section about" id="about">
+        <div class="aurora-bg"></div>
+        <div class="container">
+
+          <div class="about-left">
+            <div class="about-card">
+              <h3 class="about-card-title">
+                <ion-icon name="person-circle-outline"></ion-icon> Quick Facts
+              </h3>
+              <ul class="facts-list">
+                <li class="facts-item">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <div>
+                    <span class="facts-label">Location</span>
+                    <span class="facts-value">Punjab, India</span>
+                  </div>
+                </li>
+                <li class="facts-item">
+                  <ion-icon name="school-outline"></ion-icon>
+                  <div>
+                    <span class="facts-label">Education</span>
+                    <span class="facts-value">B.Tech CSE at LPU</span>
+                  </div>
+                </li>
+                <li class="facts-item">
+                  <ion-icon name="terminal-outline"></ion-icon>
+                  <div>
+                    <span class="facts-label">Focus Area</span>
+                    <span class="facts-value">DSA & Competitive Programming</span>
+                  </div>
+                </li>
+                <li class="facts-item">
+                  <ion-icon name="code-slash-outline"></ion-icon>
+                  <div>
+                    <span class="facts-label">CGPA</span>
+                    <span class="facts-value">8.27</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h3 class="about-card-title">
+                <ion-icon name="game-controller-outline"></ion-icon> When I'm Not Coding
+              </h3>
+              <ul class="hobbies-list">
+                <li class="hobbies-item">
+                  <ion-icon name="tv-outline"></ion-icon>
+                  <span>Watching Anime</span>
+                </li>
+                <li class="hobbies-item">
+                  <ion-icon name="game-controller-outline"></ion-icon>
+                  <span>Playing Games</span>
+                </li>
+                <li class="hobbies-item">
+                  <ion-icon name="hardware-chip-outline"></ion-icon>
+                  <span>Exploring AI Tools (OpenClaw)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <p class="section-subtitle" style="text-align:left;">About Me</p>
+            <h2 class="h2 section-title" style="text-align:left;">My Journey</h2>
+
+            <p class="section-text about-text">
+              Hello! I'm <span class="highlight-name">Nagabhusi Gowtham Reddy</span>, a Computer Science and Engineering student at Lovely Professional University with an unwavering focus on Data Structures, Algorithms, and Competitive Programming.
+            </p>
+
+            <p class="section-text about-text">
+              With 318+ problems solved on LeetCode and an active presence on Codeforces, I constantly push my problem-solving boundaries. Beyond CP, I enjoy building production-grade applications — from AI-powered resume builders to high-performance matching engines — combining algorithmic thinking with practical engineering.
+            </p>
+
+            <div class="approach-card">
+              <h3 class="approach-title">My Approach</h3>
+              <p class="approach-text">
+                I believe in the power of deliberate practice. Every problem I solve sharpens my analytical thinking. Every system I build applies those fundamentals at scale. I value clean code, efficient algorithms, and the discipline that competitive programming instills.
+              </p>
+            </div>
+
+            <a href="#projects" class="btn btn-primary blue">View Portfolio</a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #DSA & CP SHOWCASE -->
+      <section class="section dsa-cp-section" id="dsa-cp">
+        <div class="aurora-bg"></div>
+        <div class="container">
+
+          <p class="section-subtitle">Competitive Edge</p>
+          <h2 class="h2 section-title">DSA & Competitive Programming</h2>
+          <p class="section-text">My problem-solving journey across top competitive programming platforms.</p>
+
+          <div class="cp-platforms-grid">
+
+            <!-- LeetCode Card -->
+            <div class="cp-platform-card cp-leetcode" data-tilt>
+              <div class="cp-card-header">
+                <div class="cp-platform-logo">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.79 6.107a1.374 1.374 0 0 0 .072 1.889l1.832 1.832a1.374 1.374 0 0 0 1.889.072l5.67-4.732a1.374 1.374 0 0 0 .438-.961 1.374 1.374 0 0 0-1.438-1.374h-.057a1.374 1.374 0 0 0-.896.321L11.196 6.87 9.8 5.474l3.117-3.585a1.374 1.374 0 0 0-.434-1.89zM16.84 5.2a1.374 1.374 0 0 0-.96.438l-5.67 4.72a1.374 1.374 0 0 0 .071 1.89l1.832 1.832a1.374 1.374 0 0 0 1.89.072l5.67-4.732A1.374 1.374 0 0 0 20.11 8a1.374 1.374 0 0 0-1.437-1.374h-.058a1.374 1.374 0 0 0-.896.322l-4.104 3.715-1.396-1.396 3.117-3.585A1.374 1.374 0 0 0 16.84 5.2zM4.72 12.72a1.374 1.374 0 0 0-.96.44L.427 17.88a1.374 1.374 0 0 0 1.02 2.287h8.22a1.374 1.374 0 0 0 .96-2.35l-3.332-4.72a1.374 1.374 0 0 0-1.14-.57z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="cp-platform-name">LeetCode</h3>
+                  <a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" class="cp-profile-link">@Gowtham_Reddy_09 ↗</a>
+                </div>
+              </div>
+
+              <div class="cp-stats-grid">
+                <div class="cp-stat-item cp-stat-highlight">
+                  <span class="cp-stat-number counter" data-target="318">0</span>
+                  <span class="cp-stat-label">Problems Solved</span>
+                </div>
+                <div class="cp-stat-item">
+                  <span class="cp-stat-number cp-contest-rating counter" data-target="1577">0</span>
+                  <span class="cp-stat-label">Contest Rating</span>
+                </div>
+                <div class="cp-stat-item">
+                  <span class="cp-stat-number counter" data-target="11">0</span>
+                  <span class="cp-stat-label">Contests</span>
+                </div>
+                <div class="cp-stat-item">
+                  <span class="cp-stat-number">Top 27%</span>
+                  <span class="cp-stat-label">Global Ranking</span>
+                </div>
+              </div>
+
+              <div class="cp-difficulty-breakdown">
+                <h4 class="cp-breakdown-title">Problem Difficulty Breakdown</h4>
+                <div class="cp-difficulty-bars">
+                  <div class="cp-diff-row">
+                    <span class="cp-diff-label cp-easy">Easy</span>
+                    <div class="cp-diff-bar-track">
+                      <div class="cp-diff-bar cp-diff-easy" style="width: 30%"></div>
+                    </div>
+                    <span class="cp-diff-count">97</span>
+                  </div>
+                  <div class="cp-diff-row">
+                    <span class="cp-diff-label cp-medium">Medium</span>
+                    <div class="cp-diff-bar-track">
+                      <div class="cp-diff-bar cp-diff-medium" style="width: 57%"></div>
+                    </div>
+                    <span class="cp-diff-count">180</span>
+                  </div>
+                  <div class="cp-diff-row">
+                    <span class="cp-diff-label cp-hard">Hard</span>
+                    <div class="cp-diff-bar-track">
+                      <div class="cp-diff-bar cp-diff-hard" style="width: 13%"></div>
+                    </div>
+                    <span class="cp-diff-count">41</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cp-recent-contests">
+                <h4 class="cp-breakdown-title">Recent Contest Performance</h4>
+                <div class="cp-contest-list">
+                  <div class="cp-contest-item cp-contest-up">
+                    <span class="cp-contest-name">Weekly Contest 492</span>
+                    <span class="cp-contest-rank">Rank #3,885</span>
+                    <span class="cp-contest-solved">3/4 solved</span>
+                  </div>
+                  <div class="cp-contest-item cp-contest-up">
+                    <span class="cp-contest-name">Biweekly Contest 177</span>
+                    <span class="cp-contest-rank">Rank #12,457</span>
+                    <span class="cp-contest-solved">2/4 solved</span>
+                  </div>
+                  <div class="cp-contest-item cp-contest-up">
+                    <span class="cp-contest-name">Biweekly Contest 176</span>
+                    <span class="cp-contest-rank">Rank #9,475</span>
+                    <span class="cp-contest-solved">3/4 solved</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Codeforces Card -->
+            <div class="cp-platform-card cp-codeforces" data-tilt>
+              <div class="cp-card-header">
+                <div class="cp-platform-logo cf-logo">
+                  <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                    <path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5v15c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-15c0-.828.672-1.5 1.5-1.5h3zm9 7.5c.828 0 1.5.672 1.5 1.5v7.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V12c0-.828.672-1.5 1.5-1.5h3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="cp-platform-name">Codeforces</h3>
+                  <a href="https://codeforces.com/profile/gowthamreddynagabhusi09" target="_blank" class="cp-profile-link">@gowthamreddynagabhusi09 ↗</a>
+                </div>
+              </div>
+
+              <div class="cp-stats-grid">
+                <div class="cp-stat-item cp-stat-highlight">
+                  <span class="cp-stat-number counter" data-target="1144">0</span>
+                  <span class="cp-stat-label">Current Rating</span>
+                </div>
+                <div class="cp-stat-item">
+                  <span class="cp-stat-number counter" data-target="1193">0</span>
+                  <span class="cp-stat-label">Max Rating</span>
+                </div>
+                <div class="cp-stat-item">
+                  <span class="cp-stat-number" style="text-transform:capitalize;">Newbie</span>
+                  <span class="cp-stat-label">Current Rank</span>
+                </div>
+              </div>
+
+              <div class="cp-codeforces-badge">
+                <div class="cf-rank-badge">
+                  <span class="cf-rank-text">Active Competitive Programmer</span>
+                  <p class="cf-rank-desc">Consistently participating in Codeforces rounds and improving problem-solving skills across diverse algorithmic topics.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- CP Summary Stats -->
+          <div class="cp-summary-bar">
+            <div class="cp-summary-item">
+              <ion-icon name="code-slash-outline"></ion-icon>
+              <div>
+                <span class="cp-summary-number">318+</span>
+                <span class="cp-summary-label">Total Problems Solved</span>
+              </div>
+            </div>
+            <div class="cp-summary-item">
+              <ion-icon name="trophy-outline"></ion-icon>
+              <div>
+                <span class="cp-summary-number">11+</span>
+                <span class="cp-summary-label">Contests Participated</span>
+              </div>
+            </div>
+            <div class="cp-summary-item">
+              <ion-icon name="trending-up-outline"></ion-icon>
+              <div>
+                <span class="cp-summary-number">1577</span>
+                <span class="cp-summary-label">Peak LC Rating</span>
+              </div>
+            </div>
+            <div class="cp-summary-item">
+              <ion-icon name="flame-outline"></ion-icon>
+              <div>
+                <span class="cp-summary-number">Top 27%</span>
+                <span class="cp-summary-label">LeetCode Global</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #TRAINING -->
+      <section class="section experience" id="experience">
+        <div class="container">
+
+          <p class="section-subtitle">Skill Development</p>
+          <h2 class="h2 section-title">My Training</h2>
+          <p class="section-text">Focused training programs that strengthened my system-level and problem-solving foundations.</p>
+
+          <div class="experience-timeline">
+
+            <div class="experience-card">
+              <div class="experience-header">
+                <div>
+                  <h3 class="experience-job-title">Linux Fundamentals: Certificate</h3>
+                  <p class="experience-company">Certified Skill Development Program • Online</p>
+                </div>
+                <span class="experience-date">Jun 2025 - Jul 2025</span>
+              </div>
+              <ul class="experience-description" style="list-style: disc; padding-inline-start: 18px; margin-block-end: 16px; display: flex; flex-direction: column; gap: 6px;">
+                <li>Completed a certified Linux fundamentals program with hands-on work in essential commands, shell operations, file system hierarchy, and user and permission management.</li>
+                <li>Practiced real-world Linux administration tasks including process management, networking basics, and shell scripting.</li>
+                <li>Worked on command-line based exercises to strengthen problem-solving and system-level understanding.</li>
+                <li>Achieved Grade A, demonstrating a strong grasp of Linux environment fundamentals and core system operations.</li>
+              </ul>
+              <div class="experience-skills">
+                <span class="exp-skill-tag">Linux</span>
+                <span class="exp-skill-tag">Shell</span>
+                <span class="exp-skill-tag">Problem Solving</span>
+                <span class="exp-skill-tag">System Administration</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #SKILLS -->
+      <section class="section skills" id="skills">
+        <div class="aurora-bg"></div>
+        <div class="container">
+
+          <p class="section-subtitle">Technical Arsenal</p>
+          <h2 class="h2 section-title">My Skills &amp; Expertise</h2>
+          <p class="section-text">A showcase of technologies I've mastered on my journey as a developer.</p>
+
+          <div class="skills-tabs">
+            <button class="skills-tab-btn active" data-filter="all">All Skills</button>
+            <button class="skills-tab-btn" data-filter="languages">Languages</button>
+            <button class="skills-tab-btn" data-filter="web">Web Tech</button>
+            <button class="skills-tab-btn" data-filter="devops">DevOps &amp; Tools</button>
+            <button class="skills-tab-btn" data-filter="cloud">Cloud</button>
+          </div>
+
+          <ul class="skills-list">
+            <li class="skills-item" data-category="languages">
+              <div class="wrapper" style="width:90%"><h3 class="skills-title">C++</h3><data class="skills-data" value="90">90%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:90%"></div></div>
+            </li>
+            <li class="skills-item" data-category="languages">
+              <div class="wrapper" style="width:85%"><h3 class="skills-title">C</h3><data class="skills-data" value="85">85%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:85%"></div></div>
+            </li>
+            <li class="skills-item" data-category="languages">
+              <div class="wrapper" style="width:80%"><h3 class="skills-title">Python</h3><data class="skills-data" value="80">80%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:80%"></div></div>
+            </li>
+            <li class="skills-item" data-category="languages">
+              <div class="wrapper" style="width:75%"><h3 class="skills-title">Java</h3><data class="skills-data" value="75">75%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:75%"></div></div>
+            </li>
+            <li class="skills-item" data-category="web">
+              <div class="wrapper" style="width:90%"><h3 class="skills-title">HTML &amp; CSS</h3><data class="skills-data" value="90">90%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:90%"></div></div>
+            </li>
+            <li class="skills-item" data-category="web">
+              <div class="wrapper" style="width:80%"><h3 class="skills-title">JavaScript</h3><data class="skills-data" value="80">80%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:80%"></div></div>
+            </li>
+            <li class="skills-item" data-category="devops">
+              <div class="wrapper" style="width:85%"><h3 class="skills-title">Git &amp; GitHub</h3><data class="skills-data" value="85">85%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:85%"></div></div>
+            </li>
+            <li class="skills-item" data-category="devops">
+              <div class="wrapper" style="width:70%"><h3 class="skills-title">Docker</h3><data class="skills-data" value="70">70%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:70%"></div></div>
+            </li>
+            <li class="skills-item" data-category="devops">
+              <div class="wrapper" style="width:75%"><h3 class="skills-title">Linux / Ubuntu</h3><data class="skills-data" value="75">75%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:75%"></div></div>
+            </li>
+            <li class="skills-item" data-category="cloud">
+              <div class="wrapper" style="width:75%"><h3 class="skills-title">AWS (Lambda, S3, IAM)</h3><data class="skills-data" value="75">75%</data></div>
+              <div class="skills-progress-box"><div class="skills-progress" style="width:75%"></div></div>
+            </li>
+          </ul>
+
+          <div class="soft-skills">
+            <h3 class="soft-skills-title">Soft Skills</h3>
+            <div class="soft-skill-tags">
+              <span class="soft-tag">Problem-Solving</span>
+              <span class="soft-tag">Analytical Thinking</span>
+              <span class="soft-tag">Teamwork</span>
+              <span class="soft-tag">Quick Learning</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #PROJECTS -->
+      <section class="section" id="projects">
+        <div class="aurora-bg"></div>
+        <div class="container">
+
+          <p class="section-subtitle">My Work</p>
+          <h2 class="h2 section-title">Featured Projects</h2>
+          <p class="section-text">A showcase of my work spanning full-stack applications, systems programming, and cloud solutions.</p>
+
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+            <button class="filter-btn" data-filter="cpp">C++ / Systems</button>
+            <button class="filter-btn" data-filter="web">Web Dev</button>
+          </div>
+
+          <div class="project-grid">
+
+            <div class="project-card" data-category="fullstack" data-tilt>
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-library.png" alt="Resume Builder" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com/GowthamReddyNagabhusi/resume-builder" target="_blank" class="project-link-btn">
+                    <ion-icon name="logo-github"></ion-icon> GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-date">2025 – 2026</span>
+                <h3 class="project-title">Resume Builder — AI-Powered Resume Compiler</h3>
+                <p class="project-desc">An enterprise-grade, AI-powered platform that compiles resumes automatically. Users provide structured career data once, and the system generates role-specific, ATS-optimized resumes using advanced AI. Features multi-user SaaS support, external platform integrations (GitHub, LeetCode, Codeforces), and multiple professionally-designed templates.</p>
+                <div class="project-tags">
+                  <span class="project-tag">FastAPI</span>
+                  <span class="project-tag">Next.js</span>
+                  <span class="project-tag">Python</span>
+                  <span class="project-tag">SQLAlchemy</span>
+                  <span class="project-tag">Docker</span>
+                  <span class="project-tag">AI/LLM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="cpp" data-tilt>
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-aws-s3.png" alt="Limit Order Matching Engine" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com/GowthamReddyNagabhusi/limit-order-matching-engine" target="_blank" class="project-link-btn">
+                    <ion-icon name="logo-github"></ion-icon> GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-date">Mar 2026</span>
+                <h3 class="project-title">Limit Order Matching Engine</h3>
+                <p class="project-desc">High-performance C++ limit order book simulation with price-time priority matching. Processes financial orders and executes trades when buy and sell orders meet at matching prices. Uses priority queues for efficient order management based on price and timestamp priorities.</p>
+                <div class="project-tags">
+                  <span class="project-tag">C++</span>
+                  <span class="project-tag">Data Structures</span>
+                  <span class="project-tag">Priority Queues</span>
+                  <span class="project-tag">Systems Programming</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web" data-tilt>
+              <div class="project-img-wrapper">
+                <img src="assets/images/project-ai-language.png" alt="Web-Based Language Translator" class="project-img">
+                <div class="project-overlay">
+                  <a href="https://github.com/GowthamReddyNagabhusi/web-based-language-translator" target="_blank" class="project-link-btn">
+                    <ion-icon name="logo-github"></ion-icon> GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div class="project-info">
+                <span class="project-date">2025</span>
+                <h3 class="project-title">Web-Based Language Translator</h3>
+                <p class="project-desc">A full-featured web translator with multiple translation provider fallbacks (Google, LibreTranslate, MyMemory), pronunciation/transliteration helpers for Japanese, Hindi, Telugu, file-backed translation history, and structured logging. Built with Java, Maven, and embedded Jetty.</p>
+                <div class="project-tags">
+                  <span class="project-tag">Java</span>
+                  <span class="project-tag">Maven</span>
+                  <span class="project-tag">Jetty</span>
+                  <span class="project-tag">REST API</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- #CERTIFICATIONS -->
+      <section class="section" id="certifications">
+        <div class="container">
+
+          <p class="section-subtitle">Credentials</p>
+          <h2 class="h2 section-title">Certifications</h2>
+          <p class="section-text">Professional credentials validating my technical expertise and continuous learning.</p>
+
+          <div class="cert-grid">
+
+            <a href="https://drive.google.com/file/d/1CTwHbWiCKlS9RhxLlSyIljmKg2nFmY40/view?usp=sharing" target="_blank" class="cert-card-link">
+              <div class="cert-card">
+                <div class="cert-icon-wrap">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer">Oracle</span>
+                    <span class="cert-date">Mar 2026</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1pwyG9cHw_ebG6WDx60rLv2vuc6JvzAoV/view?usp=drive_link" target="_blank" class="cert-card-link">
+              <div class="cert-card">
+                <div class="cert-icon-wrap">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Privacy And Security In Online Social Media</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer">NPTEL</span>
+                    <span class="cert-date">Apr 2025</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1jS3T9jmtOtXj8DlDtwVYgtzIoyyjdX5o/view?usp=drive_link" target="_blank" class="cert-card-link">
+              <div class="cert-card">
+                <div class="cert-icon-wrap">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Object-Oriented Programming (OOP)</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer">IAM Neo Platform</span>
+                    <span class="cert-date">Dec 2024</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1TDMUUpFOnMLiVRewoWqXEkto7TCjV_Wu/view?usp=drive_link" target="_blank" class="cert-card-link">
+              <div class="cert-card">
+                <div class="cert-icon-wrap">
+                  <ion-icon name="ribbon-outline"></ion-icon>
+                </div>
+                <div class="cert-info">
+                  <h3 class="cert-title">Responsive Web Design</h3>
+                  <div class="cert-meta">
+                    <span class="cert-issuer">Free Code Camp</span>
+                    <span class="cert-date">Nov 2023</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- #ACHIEVEMENTS -->
+      <section class="section" id="achievements">
+        <div class="container">
+
+          <p class="section-subtitle">Excellence</p>
+          <h2 class="h2 section-title">Achievements</h2>
+          <p class="section-text">Milestones reflecting my commitment to excellence and continuous growth in technology.</p>
+
+          <ul class="achievement-list">
+
+            <li class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div class="achievement-info">
+                <div class="achievement-header">
+                  <h3 class="achievement-title"><a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" style="color:inherit">LeetCode: 318+ Solved | Top 27% | Peak 1577</a></h3>
+                  <span class="achievement-date">2025 – Present</span>
+                </div>
+                <p class="achievement-desc">Solved 318+ problems (97 Easy, 180 Medium, 41 Hard), reached rank #3,885 in Weekly Contest 492 (3/4 solved), and earned multiple LeetCode profile and contest badges.</p>
+              </div>
+            </li>
+
+            <li class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="star"></ion-icon>
+              </div>
+              <div class="achievement-info">
+                <div class="achievement-header">
+                  <h3 class="achievement-title"><a href="https://codeforces.com/profile/gowthamreddynagabhusi09" target="_blank" style="color:inherit">Codeforces Active Competitor — Max Rating 1193</a></h3>
+                  <span class="achievement-date">2025 – Present</span>
+                </div>
+                <p class="achievement-desc">Active participant in Codeforces rated rounds with a max rating of 1193, continuously improving algorithmic problem-solving skills.</p>
+              </div>
+            </li>
+
+            <li class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="trophy"></ion-icon>
+              </div>
+              <div class="achievement-info">
+                <div class="achievement-header">
+                  <h3 class="achievement-title"><a href="https://drive.google.com/file/d/1VleIvPRRn4AUdTFeCg5ecmVtEQM6o5wl/view?usp=drive_link" target="_blank" style="color:inherit">Adobe India Hackathon</a></h3>
+                  <span class="achievement-date">Jul 2025</span>
+                </div>
+                <p class="achievement-desc">Competed in Adobe India Hackathon Round-1 (MCQ + Coding) representing LPU as part of a competitive team.</p>
+              </div>
+            </li>
+
+            <li class="achievement-item">
+              <div class="achievement-icon">
+                <ion-icon name="trophy"></ion-icon>
+              </div>
+              <div class="achievement-info">
+                <div class="achievement-header">
+                  <h3 class="achievement-title"><a href="https://drive.google.com/file/d/1x3w6B83r6Ane6OcW-HxxehRjgr8o2zVS/view?usp=drive_link" target="_blank" style="color:inherit">Code Of Duty Hackathon</a></h3>
+                  <span class="achievement-date">Mar 2024</span>
+                </div>
+                <p class="achievement-desc">Participated in the Code of Duty Web Hackathon 2024, demonstrating strong teamwork and innovative problem solving.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <!-- #RESUME -->
+      <section class="section resume-section" id="resume">
+        <div class="container">
+
+          <p class="section-subtitle">My Resume</p>
+          <h2 class="h2 section-title">Education &amp; Training</h2>
+
+          <div class="resume-contact-bar">
+            <a href="mailto:gowthamreddynagabhusi09@gmail.com" class="resume-contact-link">
+              <ion-icon name="mail-outline"></ion-icon> gowthamreddynagabhusi09@gmail.com
+            </a>
+            <a href="tel:+918317615143" class="resume-contact-link">
+              <ion-icon name="call-outline"></ion-icon> +91-8317615143
+            </a>
+            <a href="https://www.linkedin.com/in/gowthamreddynagabhusi/" target="_blank" class="resume-contact-link">
+              <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
+            </a>
+            <a href="https://github.com/GowthamReddyNagabhusi" target="_blank" class="resume-contact-link">
+              <ion-icon name="logo-github"></ion-icon> GitHub
+            </a>
+          </div>
+
+          <div class="resume-tabs">
+            <button class="resume-tab-btn active" data-tab="education">Education</button>
+            <button class="resume-tab-btn" data-tab="extracurricular">Training</button>
+            <button class="resume-tab-btn" data-tab="certificates">Certificates</button>
+          </div>
+
+          <!-- Education -->
+
+          <div class="resume-tab-content active" id="tab-education">
+
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-institution">Lovely Professional University</h3>
+                  <p class="edu-location">Phagwara, Punjab</p>
+                </div>
+                <span class="edu-date-badge">Aug 2023 – Present</span>
+              </div>
+              <p class="edu-degree">Bachelor of Technology – Computer Science and Engineering</p>
+              <p class="edu-grade">CGPA: 8.27</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-institution">Sri Chaitanya Junior College</h3>
+                  <p class="edu-location">Vijayawada, Andhra Pradesh</p>
+                </div>
+                <span class="edu-date-badge">Sep 2021 – Apr 2023</span>
+              </div>
+              <p class="edu-degree">Intermediate – PCM</p>
+              <p class="edu-grade">Percentage: 98.2%</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-institution">Sri Chaitanya Techno School</h3>
+                  <p class="edu-location">Pulivendula, Andhra Pradesh</p>
+                </div>
+                <span class="edu-date-badge">Jun 2020 – May 2021</span>
+              </div>
+              <p class="edu-degree">Matriculation</p>
+              <p class="edu-grade">Percentage: 99%</p>
+            </div>
+
+          </div>
+
+          <!-- Training -->
+          <div class="resume-tab-content" id="tab-extracurricular">
+
+            <a href="https://drive.google.com/file/d/1JefhGWq1V8PWwjSUzQCN0LsWIwZFwumD/view?usp=drive_link" target="_blank" class="cert-card-link" style="display:block;">
+            <div class="edu-card interactive-card">
+              <div class="edu-header">
+                <div>
+                  <h3 class="edu-institution">Linux Fundamentals: Certificate</h3>
+                  <p class="edu-location">Certified Skill Development Program</p>
+                </div>
+                <span class="edu-date-badge">Jun 2025 – Jul 2025</span>
+              </div>
+              <ul class="edu-points">
+                <li>Completed a certified Linux fundamentals program with hands-on training in commands, shell operations, file system hierarchy, and user and permission management.</li>
+                <li>Practiced real-world Linux administration tasks including process management, networking basics, and shell scripting.</li>
+                <li>Worked on command-line based exercises to improve problem-solving and system-level understanding.</li>
+                <li>Achieved Grade A, demonstrating strong command over Linux fundamentals.</li>
+              </ul>
+            </div>
+            </a>
+
+          </div>
+
+          <!-- Certificates -->
+          <div class="resume-tab-content" id="tab-certificates">
+
+            <a href="https://drive.google.com/file/d/1CTwHbWiCKlS9RhxLlSyIljmKg2nFmY40/view?usp=sharing" target="_blank" class="cert-card-link" style="display:block;">
+              <div class="edu-card interactive-card">
+                <div class="edu-header">
+                  <div>
+                    <h3 class="edu-institution">Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</h3>
+                    <p class="edu-location">Oracle</p>
+                  </div>
+                  <span class="edu-date-badge">Mar 2026</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1pwyG9cHw_ebG6WDx60rLv2vuc6JvzAoV/view?usp=drive_link" target="_blank" class="cert-card-link" style="display:block;">
+              <div class="edu-card interactive-card">
+                <div class="edu-header">
+                  <div>
+                    <h3 class="edu-institution">Privacy And Security In Online Social Media</h3>
+                    <p class="edu-location">NPTEL</p>
+                  </div>
+                  <span class="edu-date-badge">Apr 2025</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1jS3T9jmtOtXj8DlDtwVYgtzIoyyjdX5o/view?usp=drive_link" target="_blank" class="cert-card-link" style="display:block;">
+              <div class="edu-card interactive-card">
+                <div class="edu-header">
+                  <div>
+                    <h3 class="edu-institution">Object-Oriented Programming (OOP)</h3>
+                    <p class="edu-location">IAM Neo Platform</p>
+                  </div>
+                  <span class="edu-date-badge">Dec 2024</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://drive.google.com/file/d/1TDMUUpFOnMLiVRewoWqXEkto7TCjV_Wu/view?usp=drive_link" target="_blank" class="cert-card-link" style="display:block;">
+              <div class="edu-card interactive-card">
+                <div class="edu-header">
+                  <div>
+                    <h3 class="edu-institution">Responsive Web Design</h3>
+                    <p class="edu-location">Free Code Camp</p>
+                  </div>
+                  <span class="edu-date-badge">Nov 2023</span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="resume-download">
+            <a href="./resume.pdf" download class="btn btn-primary blue resume-dl-btn">
+              <ion-icon name="download-outline"></ion-icon> Download Resume
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- #CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="aurora-bg"></div>
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Get In Touch</p>
+            <h2 class="h2 section-title" style="text-align:left;">Drop Me a Line</h2>
+            <p class="contact-intro">Have a question or want to work together? Fill out the form or reach out directly.</p>
+
+            <div class="wrapper">
+
+              <form action="" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required class="contact-input">
+                <input type="email" name="email" placeholder="your.email@example.com" required class="contact-input">
+                <textarea name="message" placeholder="Your message..." required class="contact-input"></textarea>
+                <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+
+              <div class="contact-info-panel">
+                <h3 class="contact-info-title">Contact Information</h3>
+
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <div class="contact-icon"><ion-icon name="mail-outline"></ion-icon></div>
+                    <div>
+                      <h4 class="contact-item-title">Email</h4>
+                      <a href="mailto:gowthamreddynagabhusi09@gmail.com" class="contact-item-link">gowthamreddynagabhusi09@gmail.com</a>
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon"><ion-icon name="call-outline"></ion-icon></div>
+                    <div>
+                      <h4 class="contact-item-title">Phone</h4>
+                      <a href="tel:+918317615143" class="contact-item-link">+91-8317615143</a>
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon"><ion-icon name="logo-linkedin"></ion-icon></div>
+                    <div>
+                      <h4 class="contact-item-title">LinkedIn</h4>
+                      <a href="https://www.linkedin.com/in/gowthamreddynagabhusi/" target="_blank" class="contact-item-link">linkedin.com/in/gowthamreddynagabhusi</a>
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon"><ion-icon name="logo-github"></ion-icon></div>
+                    <div>
+                      <h4 class="contact-item-title">GitHub</h4>
+                      <a href="https://github.com/GowthamReddyNagabhusi" target="_blank" class="contact-item-link">github.com/GowthamReddyNagabhusi</a>
+                    </div>
+                  </li>
+                  <li class="contact-item">
+                    <div class="contact-icon"><ion-icon name="code-slash-outline"></ion-icon></div>
+                    <div>
+                      <h4 class="contact-item-title">LeetCode</h4>
+                      <a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" class="contact-item-link">leetcode.com/Gowtham_Reddy_09</a>
+                    </div>
+                  </li>
+                </ul>
+
+                <div class="contact-social">
+                  <p class="follow-text">Follow Me</p>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/gowthamreddynagabhusi/" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="https://github.com/GowthamReddyNagabhusi" target="_blank" class="social-icon-btn" aria-label="GitHub">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" class="social-icon-btn" aria-label="LeetCode">
+                      <ion-icon name="code-slash-outline"></ion-icon>
+                    </a>
+                    <a href="https://codeforces.com/profile/gowthamreddynagabhusi09" target="_blank" class="social-icon-btn" aria-label="Codeforces">
+                      <ion-icon name="bar-chart-outline"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+  <!-- #FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="copyright">
+        &copy; 2026 <a href="#" class="copyright-link">Nagabhusi Gowtham Reddy</a>. All Rights Reserved.
+      </p>
+      <ul class="footer-list">
+        <li><a href="https://www.linkedin.com/in/gowthamreddynagabhusi/" target="_blank" class="footer-link">LinkedIn</a></li>
+        <li><a href="https://github.com/GowthamReddyNagabhusi" target="_blank" class="footer-link">GitHub</a></li>
+        <li><a href="https://leetcode.com/u/Gowtham_Reddy_09/" target="_blank" class="footer-link">LeetCode</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
